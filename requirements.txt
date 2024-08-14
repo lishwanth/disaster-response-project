@@ -1,0 +1,8 @@
+tweepy
+kafka-python
+transformers
+torch
+sklearn
+streamlit
+plotly
+pandas
