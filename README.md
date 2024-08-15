@@ -3,6 +3,42 @@
 ## Overview
 This project is a comprehensive real-time system designed to monitor social media data during disasters, perform sentiment analysis, and detect emerging topics. The goal is to assist in disaster response and emergency management by providing actionable insights through an interactive dashboard.
 
+### 1. Data Collection
+**Tools Used:** 
+- **Twitter API:** For streaming real-time tweets related to disasters.
+- **Kafka:** For handling real-time data streams.
+- **Tweepy:** Python library for accessing the Twitter API.
+
+### 2. Data Preprocessing
+**Tools Used:** 
+- **NLTK:** For text preprocessing, including tokenization and stopword removal.
+- **Hugging Face Transformers:** For tokenization compatible with BERT models.
+
+### 3. Sentiment Analysis
+**Tools Used:**
+- **BERT (from Hugging Face):** Pre-trained model for sentiment analysis.
+- **PyTorch:** For model inference and handling tensor operations.
+
+### 4. Topic Modeling
+**Tools Used:**
+- **Scikit-learn:** For performing Latent Dirichlet Allocation (LDA) to identify topics in tweets.
+- **CountVectorizer:** To convert tweets into a matrix of token counts.
+
+### 5. Real-Time Dashboard
+**Tools Used:**
+- **Streamlit:** For creating an interactive dashboard to visualize sentiment analysis and topic trends.
+- **Plotly:** For creating dynamic, interactive visualizations.
+  
+### 6. Workflow Orchestration
+**Tools Used:**
+- **Apache Airflow:** To automate and orchestrate data pipelines.
+
+### 7. Containerization and Deployment
+**Tools Used:**
+- **Docker:** To containerize the application for consistency across different environments.
+- **Docker Compose:** For managing multi-container Docker applications.
+- **Kubernetes:** For orchestrating Docker containers in a production environment.
+
 ## Project Structure and Tools Used
 
 ```plaintext
@@ -44,41 +80,6 @@ disaster-response-management/
 └── LICENSE                                  # License file for the project
 ```
 
-### 1. Data Collection
-**Tools Used:** 
-- **Twitter API:** For streaming real-time tweets related to disasters.
-- **Kafka:** For handling real-time data streams.
-- **Tweepy:** Python library for accessing the Twitter API.
-
-### 2. Data Preprocessing
-**Tools Used:** 
-- **NLTK:** For text preprocessing, including tokenization and stopword removal.
-- **Hugging Face Transformers:** For tokenization compatible with BERT models.
-
-### 3. Sentiment Analysis
-**Tools Used:**
-- **BERT (from Hugging Face):** Pre-trained model for sentiment analysis.
-- **PyTorch:** For model inference and handling tensor operations.
-
-### 4. Topic Modeling
-**Tools Used:**
-- **Scikit-learn:** For performing Latent Dirichlet Allocation (LDA) to identify topics in tweets.
-- **CountVectorizer:** To convert tweets into a matrix of token counts.
-
-### 5. Real-Time Dashboard
-**Tools Used:**
-- **Streamlit:** For creating an interactive dashboard to visualize sentiment analysis and topic trends.
-- **Plotly:** For creating dynamic, interactive visualizations.
-  
-### 6. Workflow Orchestration
-**Tools Used:**
-- **Apache Airflow:** To automate and orchestrate data pipelines.
-
-### 7. Containerization and Deployment
-**Tools Used:**
-- **Docker:** To containerize the application for consistency across different environments.
-- **Docker Compose:** For managing multi-container Docker applications.
-- **Kubernetes:** For orchestrating Docker containers in a production environment.
 
 ## Installation
 
